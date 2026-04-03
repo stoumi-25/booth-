@@ -7,16 +7,24 @@
     body {
       font-family: Arial, sans-serif;
       text-align: center;
-      background: #0d1b2a;
-      color: #fff;
+      background: #ffffff; /* خلفية بيضاء */
+      color: #333;
       margin: 0;
       padding: 50px;
     }
+    header {
+      margin-bottom: 30px;
+    }
+    header img {
+      height: 80px; /* حجم شعار الشركة */
+    }
     h1 {
-      color: #ffcc00;
+      color: #d32f2f; /* أحمر */
+      margin-top: 10px;
     }
     h2 {
       margin-top: 20px;
+      color: #444;
     }
     p {
       font-size: 18px;
@@ -27,13 +35,13 @@
       padding: 15px 25px;
       font-size: 18px;
       color: #fff;
-      background-color: #1976d2;
+      background-color: #d32f2f; /* زر أحمر */
       text-decoration: none;
       border-radius: 5px;
       margin-top: 20px;
     }
     .button:hover {
-      background-color: #0d47a1;
+      background-color: #b71c1c; /* أحمر داكن عند المرور */
     }
     .qr {
       margin-top: 30px;
@@ -45,12 +53,21 @@
   </style>
 </head>
 <body>
+  <!-- شعار الشركة -->
+  <header>
+    <img src="logo.png" alt="Company Logo">
+  </header>
+
   <h1>Digital Diagnosis Booth</h1>
   <h2>Why are your competitors getting more customers?</h2>
   <p>Get a free website diagnosis in under 2 minutes</p>
+  
+  <!-- زر يقود إلى Google Form -->
   <a class="button" href="https://forms.gle/v11obKT4MQ1y6yG57" target="_blank">
     Start Free Audit
   </a>
+  
+  <!-- QR Code للرابط الكامل لموقعك -->
   <div class="qr">
     <p>Or scan the QR code:</p>
     <img src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=https://stoumi-25.github.io/booth-/" alt="QR Code to Website">
